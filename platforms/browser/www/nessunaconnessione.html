@@ -1,0 +1,34 @@
+<!DOCTYPE html><head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<title>Anubia</title>
+<link rel="stylesheet" type="text/css" href="css/splashscreen.css" />
+<script>
+    document.addEventListener('deviceready', function(){
+    StatusBar.backgroundColorByHexString('#f22b4c');});
+</script>
+<script>
+    document.addEventListener("offline", onOffline, false);
+    function onOffline() {
+        window.location.href="nessunaconnessione.html";
+    }
+</script>
+<script src="cordova.js"></script>
+<script src="js/app.js"></script>
+<script src="xdk/init-dev.js"></script> 
+</head>
+<body style="background-image:url('images/1.jpg');">
+    <div class="loader"></div>
+    <div id="page">
+        <div class="header Fixed">
+        </div>
+        
+        <!--CONTENUTO PRINCIPALE -->
+        <div class="content" id="content">
+           <br /><br /><br /><br /><center><img src="images/logo_screen.png" alt="Anubia" style="width:100%; max-width:200px;" />
+           <h4 style="font-family:Arial, Helvetica, sans-serif; color:#fff; text-transform:uppercase; padding:20px;"><img src="images/noweb.png" alt="Anubia" style="width:100%; max-width:100px;" /><br />NESSUNA CONNESSIONE INTERNET<br />Controlla se disponi di connessione ad internet e riprova.</h4><input type="button" value="RICONNETTITI" id="button-blue" onClick="javascript:window.location.href='index.html';" style="width:150px; font-size:12px; height:40px; float:none; padding:0; border:3px solid #F90; color:#FFF; background-color:#f69100; text-transform:uppercase; margin-top:20px;"/></center>
+        </div>
+    </div>
+</body>
+</html>

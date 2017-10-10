@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Anubia</title>
+		<link rel="stylesheet" type="text/css" href="css/splashscreen.css" />
+        <script>
+			document.addEventListener('deviceready', function(){
+			StatusBar.backgroundColorByHexString('#f22b4c');});
+		</script>
+    </head>
+    <body>
+       <table id="wrapper">
+          <tr>
+             <td><img src="images/logo_screen.png" alt="Anubia" class="fade" /></td>
+          </tr>
+       </table>
+       <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+       <script type="text/javascript" src="cordova.js"></script>
+	   <script>
+            $(document).ready(function() {
+                
+                setTimeout(function(){
+                    $('body').addClass('loaded');
+                    $('h1').css('color','#222222');
+                }, 3000);
+                
+            });
+       </script>
+	   <script>
+	   		setTimeout(function(){window.location.href="scanner.html"} , 5000);
+	   </script>
+    </body>
+</html>
